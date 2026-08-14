@@ -29,8 +29,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Generate Route Tree
-        run: npx tsr generate || true
+      - name: Generate Tanstack Route Tree
+        run: npx @tanstack/router-cli generate || npx tsr generate
 
       - name: Build Project
         run: npm run build
