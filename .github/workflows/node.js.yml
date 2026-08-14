@@ -29,6 +29,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Generate Route Tree
+        run: npx tsr generate || true
+
       - name: Build Project
         run: npm run build
 
